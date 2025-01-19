@@ -74,7 +74,7 @@ After I solve this problem, another problem came up when I needed to access IP h
 The ethernet header was easy, since the data link header comes first, but how do I access the IP header information? To solve this issue, I simply added the size of the structure of `struct 
 ethhdr`. This makes sense because the IP layer comes after the data link layer in TCP/IP stack. Same goes for the transport layer, all I needed to do was add the ethernet and IP header structure size to the buffer to give it a new offset to look from, and I finally could read the data that's in the transport (tcp/udp) layer. 
 
-After this exhausting research and trial and error, I just needed to print out the necessary information to the user from each layer: MAC addresses, IP source and destination, port numbers, and TTL information. 
+After this exhausting research and trial and error, I just needed to print out the necessary information to the user from each layer: MAC addresses, IP source and destination, and port numbers. 
 
 ## Suggestions and Improvements
 
