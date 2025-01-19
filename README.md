@@ -8,6 +8,14 @@ My packet sniffer program allows users to listen to packets coming to their mach
 
 This is a simple project made by me to learn about networking, packets, linuxAPI, and c-programming. The program doesn't have many features, it only captures the basics from the data-link, ip, and transport layer of the network stack. It also doesn't rely on any 3rd party libraries; it only uses the linux api. The reasoning for this is so my program will be able to work on virtually all linux platforms natively.
 
+The output of the program is as follows:
+
+```
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Packet Number | Source MAC Address -> Destination MAC Address | Source IP -> Destination IP | (TCP/UDP)Source Port Number -> Destination Port Number OR (ICMP){Type, Code, Checksum} |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+
 ## How to use program
 
 1. Compile the program
